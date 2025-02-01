@@ -11,14 +11,14 @@ This project focuses on building a Convolutional Neural Network (CNN) model to c
 
 ## Technical Details
 
- 1. Data Preparation
+### 1. Data Preparation
 - Dataset: Images are organized into `TRAIN` and `TEST` directories.
 - Preprocessing:
   - Images are resized and normalized to improve training efficiency.
   - OpenCV (`cv2`) is used for image reading and transformation.
 - Augmentation: Techniques such as rotation, flipping, and scaling are applied to improve generalization.
 
- 2. Model Architecture
+### 2. Model Architecture
 The CNN is implemented using TensorFlow/Keras and includes the following layers:
 - Convolutional Layers: Extract spatial features from input images using filters.
 - MaxPooling Layers: Reduce the spatial dimensions of feature maps.
@@ -26,15 +26,37 @@ The CNN is implemented using TensorFlow/Keras and includes the following layers:
 - Dropout Layers: Prevent overfitting by randomly dropping nodes during training.
 - Dense Layers: Fully connected layers for final classification.
 
- 3. Training Details
+### 3. Training Details
 - Loss Function: Categorical Crossentropy to minimize classification errors.
 - Optimizer: Adam optimizer for adaptive learning rate adjustments.
 - Metrics: Accuracy and precision-recall metrics to evaluate performance.
 - Visualization: Training progress and performance metrics are plotted using Matplotlib.
 
- 4. Results
+### 4. Results
 - Achieved high accuracy in classifying waste into "Organic" and "Recyclable" categories.
 - Insights into the dataset’s composition were visualized using pie charts.
+
+## Weekly Progress
+
+### Week 1 Progress
+- Dataset Preparation:
+  - The dataset was organized into `TRAIN` and `TEST` directories.
+  - Images were read and converted to RGB format using OpenCV.
+- Model Architecture:
+  - Implemented a CNN model using TensorFlow and Keras.
+  - Used layers like `Conv2D`, `MaxPooling2D`, `BatchNormalization`, `Dropout`, `Flatten`, and `Dense`.
+- Basic Visualization:
+  - Loaded and displayed sample images from the dataset.
+
+### Week 2 Progress
+- Data Augmentation:
+  - Applied transformations using `ImageDataGenerator` to enhance model performance.
+- Model Compilation and Training:
+  - Defined loss function and optimizer.
+  - Trained the model on the dataset.
+- Evaluation:
+  - Assessed model accuracy and loss.
+  - Visualized training progress.
 
 ## Applications
 - Automating waste segregation to reduce manual effort.
@@ -53,24 +75,24 @@ The CNN is implemented using TensorFlow/Keras and includes the following layers:
 
 ### Installation
 1. Clone this repository:
-   '''
-   git clone https://github.com/your-repo/waste-management-cnn
-   '''
+   ```
+   git clone https://github.com/your-repo/waste-management-cnn.git
+   ```
 2. Install the required libraries:
-   '''
+   ```
    pip install -r requirements.txt
-   '''
+   ```
 
 ### Usage
 1. Prepare the dataset by organizing images into `TRAIN` and `TEST` directories.
 2. Run the notebook or script to preprocess the data and train the model.
-   '''
+   ```
    python train_model.py
-   '''
+   ```
 3. Evaluate the model and visualize results.
-   '''
+   ```
    python evaluate_model.py
-   '''
+   ```
 
 ## Future Scope
 - Extend the classification categories to include more waste types.
@@ -80,4 +102,7 @@ The CNN is implemented using TensorFlow/Keras and includes the following layers:
 ## Acknowledgments
 - TensorFlow and Keras documentation.
 - OpenCV community for image processing resources.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
