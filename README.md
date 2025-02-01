@@ -40,6 +40,7 @@ The CNN is implemented using TensorFlow/Keras and includes the following layers:
 
 ### Week 1 Progress
 - Dataset Preparation:
+  - Dataset Link : https://www.kaggle.com/datasets/techsash/waste-classification-data
   - The dataset was organized into `TRAIN` and `TEST` directories.
   - Images were read and converted to RGB format using OpenCV.
 - Model Architecture:
