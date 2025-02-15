@@ -94,6 +94,13 @@ The CNN is implemented using TensorFlow/Keras and includes the following layers:
    ```
    python evaluate_model.py
    ```
+### Streamlit Application
+  ![WhatsApp Image 2025-02-15 at 19 07 58_13a26f70](https://github.com/user-attachments/assets/b5fa6314-bcef-4784-8039-51a57f4138a8)
+  ![WhatsApp Image 2025-02-15 at 19 08 20_58f18486](https://github.com/user-attachments/assets/9317e6ba-2585-4592-8679-776f8f33708f)
+  ![WhatsApp Image 2025-02-15 at 19 10 15_08c67a73](https://github.com/user-attachments/assets/fb524bcf-369e-4ace-afcc-058243ff2e4a)
+
+
+
 
 ## Future Scope
 - Extend the classification categories to include more waste types.
